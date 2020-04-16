@@ -1,0 +1,131 @@
+.wrapper {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+  }
+  
+  header {
+    padding: 10px 0;
+    background-color:#f4e2d6;
+    margin-bottom: 5px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    color: black;
+    width: 100%;
+    text-align: center;
+    position:sticky;
+    top:0;
+  }
+  
+  header h1 {
+    font-size: 30px;
+    margin: 0;
+    box-shadow: none;
+    
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: center;
+    font-weight: light;
+    
+  }
+  
+  header p {
+    font-weight: light;
+    
+    padding: 0 10px;
+    margin: 0;
+  }
+  
+  .jumbotron {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to left top, blue, red) center center fixed;
+    background-size: cover;
+    color: #ffffff;
+    height: 50px;
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+    width: 100%;
+  }
+  
+  .jumbotron p {
+    text-align: center;
+    margin: 0 0 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .jumbotron {
+      margin-top: 120px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .jumbotron {
+      margin-top: 110px;
+    }
+    .jumbotron p {
+      margin: 0;
+      font-size: 15px;
+    }
+  }
+  
+  .card {
+    background: #fff;
+    border: 5px solid #fff;
+    border-radius: 2px;
+    margin: 40px 10px;
+    position: inherit;
+    height: 100%;
+    width: 400px;
+    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    transition: box-shadow 0.1s ease-in-out;
+    text-align: left;
+  }
+  
+  .card:hover {
+    box-shadow: 0 12px 24px #999, 0 12px 24px #999;
+  }
+  
+  .card>.img-container {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .card>.img-container>img {
+    width: 100%
+  }
+  .card>.img-content {
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+    font-size: 12px;
+  }
+  
+  
+  
+  
+  .animate {
+    animation: shake 0.5s;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .card:hover {
+      box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    }
+  }
+
+  @media only screen and (min-width:768px){
+    header {
+        text-align:left;
+    }
+    header nav {
+        display: flex;
+        justify-content: right;
+        font-weight: light;
+        
+      }
+  }
