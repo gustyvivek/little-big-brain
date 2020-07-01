@@ -1,8 +1,8 @@
-# Little Big Brain
+# Meme Valley
 
 A game built on ReactJS that displays a deck of memes and asks you to not choose the same meme twice.
 
-External API Used: [https://meme-api.herokuapp.com/gimme](https://meme-api.herokuapp.com/gimme)
+Check it out: [https://memevalley.surge.sh](https://memevalley.surge.sh)
 
 ## Installation
 
