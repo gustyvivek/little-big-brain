@@ -21,7 +21,7 @@ function Navbar(props){
                     {props.children}
                 </nav>
             </div>
-            <a href="window.location.reload()" class="float">
+            <a href="./" onclick class="float">
                 <i class="fa fa-refresh fa-lg my-float"></i>
             </a>
         </header>
