@@ -1,3 +1,5 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+
 .wrapper {
     height: 100%;
     display: flex;
@@ -6,21 +8,42 @@
     align-content: flex-start;
     overflow: auto;
   }
+
+  .float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:2%;
+    right:5%;
+    background-color:black;
+    color:white;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 6px #66676d;
+  }
+  
+  .my-float{
+    margin-top:22px;
+    size: 
+  }
   
   header {
     padding: 10px 0;
-    background-color:#f4e2d6;
+    font-family: Quicksand;
+    background-color:black;
     margin-bottom: 5px;
     box-shadow: 0 3px 6px #999, 0 3px 6px #999;
-    color: black;
+    color: white;
     width: 100%;
     text-align: center;
     position:sticky;
     top:0;
+    border-radius: 0 0 10px 10px;
   }
   
   header h1 {
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 500;
     margin: 0;
     box-shadow: none;
     
@@ -30,6 +53,7 @@
     display: flex;
     justify-content: center;
     font-weight: light;
+
     
   }
   
@@ -42,35 +66,15 @@
   
   .jumbotron {
     display: flex;
-    align-items: center;
-    background: linear-gradient(to left top, blue, red) center center fixed;
-    background-size: cover;
-    color: #ffffff;
     height: 50px;
-    text-shadow: 0.25px 0.25px 0.25px #000000;
     width: 100%;
   }
   
-  .jumbotron p {
-    text-align: center;
-    margin: 0 0 20px;
-    font-weight: bold;
-    font-size: 1.5rem;
-  }
+
   
   @media only screen and (max-width: 700px) {
     .jumbotron {
-      margin-top: 120px;
-    }
-  }
-  
-  @media only screen and (max-width: 600px) {
-    .jumbotron {
-      margin-top: 110px;
-    }
-    .jumbotron p {
-      margin: 0;
-      font-size: 15px;
+      margin-top: 10px;
     }
   }
   
@@ -78,11 +82,11 @@
     background: #fff;
     border: 5px solid #fff;
     border-radius: 2px;
-    margin: 40px 10px;
+    margin: 30px 10px;
     position: inherit;
     height: 100%;
     width: 400px;
-    box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+    box-shadow: 0 2px 4px #999, 0 2px 4px #999;
     transition: box-shadow 0.1s ease-in-out;
     text-align: left;
   }
@@ -103,6 +107,9 @@
     padding-left: 0.5rem;
     padding-right: 1rem;
     font-size: 12px;
+  }
+  .meme-footer {
+    font-family: Quicksand;
   }
   
   

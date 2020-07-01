@@ -9,7 +9,7 @@ function CharacterCard(props)
                 <img alt={props.title} src={props.image}/>
             </div>
             <div className="img-content">
-    <strong>Stolen From: </strong><a href={props.postLink} target="blank">{props.postLink}</a>
+                <span className="meme-footer">stolen from: </span><a href={props.postLink} target="blank">{props.postLink}</a>
             </div>               
         </div>
     );

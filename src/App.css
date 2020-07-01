@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+.content-mobile {display: none;}
+.content-dektop {display: none;}
+
+@media only screen and (max-width: 700px) {
+    .content-desktop {
+        display: none;
+    }
+    .content-mobile{
+        display: inline;
+    }
+  }
+
+@media only screen and (min-width: 768px) {
+
+    .content-desktop {
+        display: block;
+        font-family: Quicksand;
+        
+        color:  #191c27;
+        margin-top: 15%;
+        text-align: center;
+    }
+    .first-line{
+        font-weight: 700;
+        font-size: 300%;
+    }
+    .second-line {
+        font-weight: 500;
+        font-size: large;
+    }
+    .content-mobile{
+        display: none;
+    }
+    
+    
+    
+  }
+

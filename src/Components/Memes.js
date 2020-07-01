@@ -2,12 +2,12 @@ import React,{Component} from 'react';
 import CharacterCard from "./CharacterCard"
 import Wrapper from "./Wrapper";
 import Navbar from "./Navbar";
-import Jumbotron from "./Jumbotron";
 import './Memes.css';
 
 
 
 import axios from "axios";
+import Jumbotron from './Jumbotron';
 class Memes extends Component{
   
   constructor(props){
@@ -127,9 +127,10 @@ class Memes extends Component{
           currentScore={this.state.currentScore}
           highScore={this.state.highScore}
         />
-        
-      <Wrapper>
-        <Jumbotron/>
+      <Jumbotron/>
+      
+      <Wrapper className="all-memes">
+
         {this.state.allMemes.map(meme=>(
           <CharacterCard
             clicked={this.state.clicked}
